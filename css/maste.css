@@ -1,3 +1,43 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cuerpoPagina{
+    background-image: url('../img/fondo4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:  100vw;
+    height: 100vh;
+}
+.encabezado{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.titulo{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+   
+}
+
+.subtitulo{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+   
+}
+.carrera{
+    background-color: rgba(234,201,166,0.5);
+    padding-left: 0px;
+    padding-right: 0px;
+    display: none;
+    
+}
+
 [class*=caballo] {
     position: relative;
 }
@@ -16,10 +56,8 @@
     
 }
 .pie{
-    background-image: url('../img/logo_daniel.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-
+    width: 20%;
+}
+.pie .logo{
+    width: 100%;
 }

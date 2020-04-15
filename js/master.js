@@ -8,6 +8,7 @@
     let nombreCaballo2 = document.querySelector('.nombreCaballo2');
     let nombreCaballo3 = document.querySelector('.nombreCaballo3');
     let nombreCaballo4 = document.querySelector('.nombreCaballo4');
+    let carrera = document.querySelector('.carrera');
     let cantidadJugadores = 0;
     let avance = 0;  //Representa la velocidad de carrera del caballo Aleatorio
     let margenIzquierdo1 = 1;
@@ -19,6 +20,7 @@
 
 
     let inciar = document.getElementById('iniciar');
+  
     let reanudar = document.getElementById('reanudar');   
     while (cantidadJugadores==0) {
         cantidadJugadores = parseInt(prompt("Cantidad de Jugadores (Entre 2 y 4)"));
@@ -45,6 +47,8 @@
     //console.log(anchoContenedor);
     
     inciar.addEventListener('click',function(){
+        carrera.style.display = 'block';
+        
         if(cantidadJugadores==2){
           caballo1.classList.add('caballoActivo');
           caballo2.classList.add('caballoActivo');
@@ -228,6 +232,7 @@
         //    'success'
         //  )
         alert(`Felicitaciones ${ganador}. Ganaste la Carrera`);
+        carrera.style.display = 'none';
           
     }   
     //Funcion para reanudar el juego
